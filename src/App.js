@@ -97,7 +97,7 @@ class App extends Component {
         <AppBar position="static" className={classes.appBar}>
           <Toolbar>
             <Typography variant="title" color="inherit" noWrap>
-              Missoula.Tech
+              MissoulaTech
             </Typography>
           </Toolbar>
         </AppBar>
@@ -110,7 +110,7 @@ class App extends Component {
                 color="textPrimary"
                 gutterBottom
               >
-                Missoula.Tech
+                MissoulaTech
               </Typography>
               <Typography
                 variant="title"
