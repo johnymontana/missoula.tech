@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import meetup from './meetup.svg';
-import slack from './slack.svg';
+import meetup from "./meetup.svg";
+import slack from "./slack.svg";
 import classNames from "classnames";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
@@ -67,7 +67,8 @@ const cards = [
   {
     image: meetup,
     heading: "MissoulaTech Meetup Group",
-    description: "Learn more about software development and meet your fellow Missoula tech community members. We aim for roughly monthly in-person meetups.",
+    description:
+      "Learn more about software development and meet your fellow Missoula tech community members. We aim for roughly monthly in-person meetups.",
     buttons: [
       {
         title: "Join MissoulaTech Meetup Group",
@@ -78,11 +79,13 @@ const cards = [
   {
     image: slack,
     heading: "MissoulaTech Slack Group",
-    description: "Chat online about all issues MissoulaTech in the MissoulaTech Slack workspace.",
+    description:
+      "Chat online about all issues MissoulaTech in the MissoulaTech Slack workspace.",
     buttons: [
       {
         title: "Join MissoulaTech Slack Workspace",
-        url: "https://join.slack.com/t/missoulatech/shared_invite/enQtMzk1NTIzOTQxNDczLTI3ZTIwYzBlN2M1YzM1Y2RhYzU1Y2I4YzAxZDc3ZTdhZTAyMDcwNmIxYTk1OTNhMzE5Njc3NGFkYjk2MTJjYzU"
+        url:
+          "https://join.slack.com/t/missoulatech/shared_invite/enQtMzk1NTIzOTQxNDczLTI3ZTIwYzBlN2M1YzM1Y2RhYzU1Y2I4YzAxZDc3ZTdhZTAyMDcwNmIxYTk1OTNhMzE5Njc3NGFkYjk2MTJjYzU"
       }
     ]
   }
@@ -155,21 +158,35 @@ class App extends Component {
                       >
                         {card.heading}
                       </Typography>
-                      <Typography>
-                       {card.description}
-                      </Typography>
+                      <Typography>{card.description}</Typography>
                     </CardContent>
                     <CardActions>
                       {card.buttons.map(b => {
-                        return (<Button size="small" variant="outlined" color="primary" href={b.url} fullWidth={true}>
-                          {b.title}
-                        </Button>)
+                        return (
+                          <Button
+                            size="small"
+                            variant="outlined"
+                            color="primary"
+                            href={b.url}
+                            fullWidth={true}
+                          >
+                            {b.title}
+                          </Button>
+                        );
                       })}
-                     
                     </CardActions>
                   </Card>
                 </Grid>
               ))}
+              <Grid item key="calendar" xs={12}>
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=38m9lgovesqfal473jo9p1a360%40group.calendar.google.com&ctz=America%2FDenver"
+                  width="100%"
+                  height="500px"
+                  frameborder="0"
+                  scrolling="no"
+                />
+              </Grid>
             </Grid>
           </div>
         </main>
@@ -180,7 +197,10 @@ class App extends Component {
             color="textSecondary"
             component="p"
           >
-            Missoula Tech is moderated by <a href="https://twitter.com/lyonwj">@lyonwj</a> and <a href="https://goto10line.net/">@glesica</a>. Email lyonwj -at- gmail.com with any questions.
+            Missoula Tech is moderated by{" "}
+            <a href="https://twitter.com/lyonwj">@lyonwj</a> and{" "}
+            <a href="https://goto10line.net/">@glesica</a>. Email lyonwj -at-
+            gmail.com with any questions.
           </Typography>
         </footer>
       </React.Fragment>
