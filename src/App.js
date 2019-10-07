@@ -85,7 +85,7 @@ const cards = [
       {
         title: "Join MissoulaTech Slack Workspace",
         url:
-          "https://join.slack.com/t/missoulatech/shared_invite/enQtMzk1NTIzOTQxNDczLTI3ZTIwYzBlN2M1YzM1Y2RhYzU1Y2I4YzAxZDc3ZTdhZTAyMDcwNmIxYTk1OTNhMzE5Njc3NGFkYjk2MTJjYzU"
+          "https://join.slack.com/t/missoulatech/shared_invite/enQtNzg1ODE2Njg1NDI5LWYwYjhlMzM3ZTY0ZDkxMzA1NjBjMTI3MmQyMmQ0ZjllNGNhYTA2M2NkZGFhOWEwM2ExMzFhMTU0MmIwYjkxZDA"
       }
     ]
   }
