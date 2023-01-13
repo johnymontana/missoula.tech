@@ -179,13 +179,14 @@ class App extends Component {
                 </Grid>
               ))}
               <Grid item key="calendar" xs={12}>
-                <iframe
+                {/* <iframe
                   src="https://calendar.google.com/calendar/embed?src=38m9lgovesqfal473jo9p1a360%40group.calendar.google.com&ctz=America%2FDenver"
                   width="100%"
                   height="500px"
                   frameborder="0"
                   scrolling="no"
-                />
+                  title=""
+                /> */}
               </Grid>
             </Grid>
           </div>
@@ -198,9 +199,8 @@ class App extends Component {
             component="p"
           >
             Missoula Tech is moderated by{" "}
-            <a href="https://twitter.com/lyonwj">@lyonwj</a> and{" "}
-            <a href="https://goto10line.net/">@glesica</a>. Email lyonwj -at-
-            gmail.com with any questions.
+            <a href="https://twitter.com/lyonwj">Will</a> and{" "}
+            <a href="https://lesica.com/">George</a>. 
           </Typography>
         </footer>
       </React.Fragment>
